@@ -1,0 +1,7 @@
+.deck {
+  position: inherit;
+  width: 100%;
+  height: calc(var(--vh, 1vh) * 50);
+  background: linear-gradient(360deg, black, transparent)
+
+}
