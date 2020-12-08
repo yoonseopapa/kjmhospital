@@ -7,6 +7,8 @@ import Service from "../components/service"
 // import Header from "../components/header";
 import Navibar from "../components/navibar";
 import Map from "../pages/map";
+import Warrap from "../components/warrap";
+
 
 let tl = gsap.timeline();
 
@@ -55,7 +57,7 @@ const Home = ({ dimensions }) => {
   };
 
   useEffect(() => {
-    homeAnimation(completeAnimation);
+    // homeAnimation(completeAnimation);
   }, []);
 
   useEffect(() => {
@@ -65,14 +67,15 @@ const Home = ({ dimensions }) => {
 
   return (
     <>
-       <Navibar/>
+       {/* <Navibar/> */}
       {/* <Header dimensions={dimensions} /> */}
-       {animationComplete === false ? <IntroOverlay /> : ""} 
-      <Banner />
-      <Cases />
+       {/* {animationComplete === false ? <IntroOverlay /> : ""}  */}
+     {/* <Banner />  */}
+      {/* <Cases /> */}
      {/* <Deck/> */}
-      <Service />
-      <Map/>
+      <Warrap/>
+      {/* <Service/>  */}
+      {/* <Map/> */}
     </>
   );
 };

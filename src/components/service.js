@@ -47,13 +47,13 @@ document.addEventListener("DOMContentLoaded", function() {
 const Service = () => {
   return (
     <div class="cInnerContent">
-    <h1 class="header-section gs_reveal ipsType_center">Scroll down and up to see different reveal animations</h1>
+    {/* <h1 class="header-section gs_reveal ipsType_center">Scroll down and up to see different reveal animations</h1> */}
     
     <div class="features">
   
       <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
         <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromLeft">
-          <div class="card">
+          <div class="card" id="card">
             <img width="479" src="https://picsum.photos/479/479?index=1" alt=""
             />
           </div>
@@ -72,7 +72,7 @@ const Service = () => {
         </div>
        
         <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromRight">
-          <div class="card">
+          <div class="card" id="card1">
             <img width="479" src="https://picsum.photos/479/479?index=2" alt=""/>
           </div>
         </div>
@@ -81,7 +81,7 @@ const Service = () => {
   
       <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
         <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromLeft">
-          <div class="card">
+          <div class="card" id="card2">
             <img width="479" src="https://picsum.photos/479/479?index=3" alt=""/>
           </div>
         </div>
