@@ -1,53 +1,64 @@
 import React, { useEffect, useState } from "react";
-import IntroOverlay from "../components/introOverlay";
-import Banner from "../components/banner";
-import Cases from "../components/cases";
-import gsap from "gsap";
-import Service from "../components/service"
-// import Header from "../components/header";
-import Navibar from "../components/navibar";
-import Map from "../pages/map";
 import Warrap from "../components/warrap";
-
-
-let tl = gsap.timeline();
+import {TweenMax,Power2,Power3, Expo, Circ } from "gsap";
 
 const homeAnimation = completeAnimation => {
-  tl.from(".line span", 1.8, {
-    y: 100,
-    ease: "power4.out",
-    delay: 1,
-    skewY: 7,
-    stagger: {
-      amount: 0.3
-    }
+  TweenMax.to('.left', 2, {
+    delay: 0.8,
+    width: '30%',
+    ease: Power2.easeInOut
   })
-    .to(".overlay-top", 1.6, {
-      height: 0,
-      ease: "expo.inOut",
-      stagger: 0.4
-    })
-    .to(".overlay-bottom", 1.6, {
-      width: 0,
-      ease: "expo.inOut",
-      delay: -0.8,
-      stagger: {
-        amount: 0.4
-      }
-    })
-    .to(".intro-overlay", 0, {
-      css: { display: "none" }
-    })
-    .from(".case-image img", 1.6, {
-      scale: 1.4,
-      ease: "expo.inOut",
-      delay: -2,
-      stagger: {
-        amount: 0.4
-      },
-      onComplete: completeAnimation
-    });
+  
+  TweenMax.to('.right', 2, {
+    delay: .6,
+    width: '70%',
+    ease: Power3.easeInOut
+  })
+  
+  TweenMax.from('.nav', 2, {
+    delay: .8,
+    opacity: 0,
+    ease: Expo.easeInOut
+  })
+  
+  TweenMax.from('.text h1', 2, {
+    delay: .6,
+    x: 1000,
+    ease: Circ.easeInOut
+  })
+  
+  TweenMax.from('.text p', 2, {
+    delay: .7,
+    x: 1000,
+    ease: Circ.easeInOut
+  })
+  
+  TweenMax.to('.karina', 2, {
+    delay: 1.5,
+    width: '800px',
+    ease: Power2.easeInOut
+  })
+  
+  TweenMax.staggerFrom('.bottomnav ul li', 2, {
+    delay: 1,
+    x: 1000,
+    ease: Circ.easeInOut
+  }, 0.08)
+  
+  TweenMax.from('.info', 2, {
+    delay: 1.5,
+    y: 100,
+    ease: Circ.easeInOut
+  })
+  
+  TweenMax.from('.name', 2, {
+    delay: 1.5,
+    x: -600,
+    ease: Circ.easeInOut
+  })
 };
+
+
 
 const Home = ({ dimensions }) => {
   const [animationComplete, setAnimationComplete] = useState(false);
@@ -57,8 +68,9 @@ const Home = ({ dimensions }) => {
   };
 
   useEffect(() => {
-    // homeAnimation(completeAnimation);
+    homeAnimation(completeAnimation);
   }, []);
+
 
   useEffect(() => {
     let vh = dimensions.height * 0.01;
@@ -67,15 +79,8 @@ const Home = ({ dimensions }) => {
 
   return (
     <>
-       {/* <Navibar/> */}
-      {/* <Header dimensions={dimensions} /> */}
-       {/* {animationComplete === false ? <IntroOverlay /> : ""}  */}
-     {/* <Banner />  */}
-      {/* <Cases /> */}
-     {/* <Deck/> */}
-      <Warrap/>
-      {/* <Service/>  */}
-      {/* <Map/> */}
+     {animationComplete}
+       <Warrap/>
     </>
   );
 };

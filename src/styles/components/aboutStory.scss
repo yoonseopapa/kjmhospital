@@ -1,0 +1,220 @@
+
+@font-face {
+  font-family: 'NanumPenScript-Regular';
+  src: local('NanumPenScript-Regular'), url("/fonts/NanumPenScript-Regular.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Jua-Regular';
+  src: local('Jua-Regular'), url("/fonts/Jua-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Arita-dotum-Medium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.scrolldownLeftCon {
+  color: rgb(255, 255, 255);;
+  position: absolute;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  bottom: 110px;
+  left: 1%;
+  transform: rotate(-90deg);
+}
+.scrolldownLeftCon::before {
+  content: "";
+  border: 1px solid rgb(255, 255, 255);
+  width: 100px;
+  margin: 0 20px 0 0;
+  transform: translateY(-3px);
+  opacity: .5;
+  display: inline-block;
+}
+
+.gununTitle{
+  top:13%;
+  width: 69.8%; 
+  height: 74%; 
+  left:14.9%;
+  overflow: hidden;
+  margin: 0px auto; 
+  position: relative;
+  box-shadow: 0px 0px 10px rgb(87, 87, 87);
+}
+
+.contentTitle {
+  width: 100%;
+  text-align: center;
+  font-size:30px;
+  font-family: 'Raiderfont';
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+}
+.contentTitle p{
+  color:rgb(99, 97, 97);
+}
+
+.contentStroy{
+  width: 32%;
+  right: 13%;;
+  // left: 10px;
+  height:70%;
+  // top: 35%;
+  background: rgba(248,248,248,.88);
+  position: absolute;
+}
+
+.contentStroy p{
+  margin-top: 20%;
+  margin-left: 6%;
+  font-family: 'Arita-dotum-Medium';
+  text-align: left;
+  font-size:17px;
+  color:#818181
+}
+
+.contentStroy h1{
+  
+  margin-left: 6%;
+  font-family: 'Arita-dotum-Medium';
+  text-align: left;
+  font-size:35px;
+  color:#000000
+}
+
+.contentStroy h2{
+  margin-top: 15%;
+  font-family: 'Arita-dotum-Medium';
+  margin-left: 6%;
+  text-align: left;
+  font-size:15px;
+  color: #818181
+}
+
+.contentStroy h3{
+  margin-left: 6%;
+  font-family: 'NanumPenScript-Regular';
+  text-align: left;
+  font-size:23px;
+  color:#818181
+}
+
+
+
+.leftContents {
+  top:100%;
+  position: absolute;
+  width: 85%;
+  transition: 0.3s;
+}
+
+.rightContents {
+  position: absolute;
+  top:250%;
+  width: 95%;
+  margin-left: 5%;
+
+  margin-bottom: 10%;
+  transition: 0.3s;
+}
+
+.firstCardContents{
+  width: 39%;
+  margin-left: 10%;
+  margin-top: 15%;
+  position: absolute;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  z-index: 1;
+}
+
+.firstCardProfile{
+  width: 30%;
+  margin-left: 15%;
+  margin-top: 10%;
+  position: absolute;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.firstCardAcne{
+  box-shadow: 0px 0px 10px white;
+  width: 32%;
+  margin-top: 10%;
+  position: absolute;
+  left: 53%;
+
+}
+
+.firstCardSecond{
+  box-shadow: 0px 0px 10px white;
+  width: 35%;
+  margin-top:10%;
+  left: 25%;
+  position: absolute;
+}
+
+
+.storyAcne{
+  position: absolute;
+  margin-top: 20%;
+}
+
+.firstCardLaser{
+  width: 23%;
+  margin:10px;
+}
+
+.story{
+  position: absolute;
+  margin-top: 22%;
+  float: right;
+  left: 63%;
+}
+
+.story, .storyAcne span{
+  width: 54.5%;
+font-size:20px;
+}
+
+.story h2, .storyAcne h2{
+  font-family: 'Arita-dotum-Medium';
+  font-size: 18px;
+  }
+
+  .story p, .storyAcne p{
+    font-size: 15px;
+    }
+
+.title h2{
+  font-size: 23px;
+  position: absolute;
+}
+
+.aging{
+  width: 100%;
+  position: absolute;
+  top:10%;
+  // background-image: url("/assets/aging1.jpg");
+  height:120%;
+  // background-color: rgba(0, 0, 0, 0.315);
+}
+
+
+.marchine{
+  left: 6%;
+  width: 90%;
+  position: absolute;
+  top: 163%;
+}
+
+.freckles{
+  position: absolute;
+  width: 100%;
+  top: 360%
+}

@@ -8,11 +8,14 @@
 // @import "./components/navigation.scss";
 @import "./components/service.scss";
 @import "./components/warrap.scss";
+@import "./components/map.scss";
+@import "./components/footer.scss";
+@import "./components/aboutStory.scss";
+@import "./components/BackgroundVideo.scss";
 
 body,
 html {
-
-  visibility: hidden;
+  visibility: inherit;
   user-select: none;
   background: $white;
   overscroll-behavior: none;
@@ -30,7 +33,7 @@ html {
   }
   .carousel {
     height: calc(var(--vh, 1vh) * 65);
-    width: 51%;
+    width: 78%;
   }
 
   .w-100{

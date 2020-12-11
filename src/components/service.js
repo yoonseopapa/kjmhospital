@@ -1,6 +1,11 @@
 import React from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import imgaA from "../assets/profile.jpg";
+import imgaB from "../assets/laser.jpg";
+import imgaC from "../assets/disease.jpg";
+import imgaD from "../assets/satisfaction.jpg";
+import imgaE from "../assets/beauty.jpg";
 
 
 function animateFrom(elem, direction) {
@@ -49,64 +54,110 @@ const Service = () => {
     <div class="cInnerContent">
     {/* <h1 class="header-section gs_reveal ipsType_center">Scroll down and up to see different reveal animations</h1> */}
     
-    <div class="features">
-  
-      <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
-        <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromLeft">
-          <div class="card" id="card">
-            <img width="479" src="https://picsum.photos/479/479?index=1" alt=""
+    <div className="features">
+     <div id="aboutStory"></div>
+      <div className="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
+        <div className="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromLeft">
+          <div className="card1" id="card">
+            <img className="firstCard" width="479" src={imgaA}   alt=""
             />
+            <div id="laser"></div>
           </div>
         </div>
-  
-        <div class="ipsGrid_span7 ipsType_left">
-          <h2 class="heading_large gs_reveal">Create amazing <strong>SVG</strong> animations</h2>
-          <p class="gs_reveal"><a href="https://greensock.com/drawsvg/">DrawSVGPlugin</a> allows you to progressively reveal (or hide) SVG strokes to make them look like they're being drawn. <a href="https://greensock.com/morphsvg/">MorphSVGPlugin</a> to Morph any SVG shape into any other shape smoothly regardless of the number of points in each. <a href="/docs/v3/Plugins/MotionPathPlugin">MotionPathPlugin</a> allows you to easily move any object along a path.</p>
+        <div className="ipsGrid_span7 ipsType_left">
+          <h2 className="heading_large gs_reveal"><strong>ABOUT STORY</strong>
+          </h2>
+          <p className="gs_reveal"> 정확한 진단과 책임있는 진료를 약속하는 <br/>피부과 전문의 김정민 원장.
+          <div className="scrolldownLeft">scroll down</div> </p>
         </div>
       </div>
-  
-      <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
-        <div class="ipsGrid_span7 ipsType_right">
-          <h2 class="heading_large gs_reveal">Supercharge immersive <strong>WebGL</strong> experiences</h2>
-          <p class="gs_reveal">GreenSock is used in some of the most popular <a href="//threejs.org/">Three.js</a> powered WebGL projects. Animate any object in a scene. <a href="https://greensock.com/PixiPlugin/">PixiPlugin</a> makes animating <a href="//www.pixijs.com/">Pixi.js</a> objects with GSAP a breeze. Animate position, scale, color effects and more with all the power and control of GSAP and the rendering speed of Pixi.js.</p>
+      
+      <div className="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
+        <div className="ipsGrid_span7 ipsType_right">
+        <h2 className="heading_large gs_reveal1"><strong>LASER THERAPY</strong>
+         <p>
+          레이저 치료
+          <br/>
+          <br/>
+        </p>
+        </h2>
+        <p className="gs_reveal"> 창문을 깨끗하게 청소하려면 겉과 속, 모두 치료가 필요합니다.<br/>피부의 근본적인 개선을 통해 건강하고 아름다운 피부를 만들 수 있습니다.
+        <div className="scrolldownRight">scroll down</div>
+        </p>
         </div>
        
-        <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromRight">
-          <div class="card" id="card1">
-            <img width="479" src="https://picsum.photos/479/479?index=2" alt=""/>
+        <div className="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromRight">
+          <div className="card1" id="card1">
+            <img width="479" src={imgaB} alt=""/>
           </div>
         </div>
         
       </div>
-  
-      <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
-        <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromLeft">
-          <div class="card" id="card2">
-            <img width="479" src="https://picsum.photos/479/479?index=3" alt=""/>
+      <div id="skin"></div>
+      <div className="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
+        <div className="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromLeft">
+          <div className="card1" id="card2">
+            <img width="479" src={imgaC} alt=""/>
           </div>
         </div>
   
-        <div class="ipsGrid_span7 ipsType_left">
-          <h2 class="heading_large gs_reveal">Control performant <strong>Canvas</strong> animations</h2>
-          <p class="gs_reveal">GSAP makes animating with Canvas even easier by providing an easier way to look and sequence animations. GSAP works great with <a href="//www.adobe.com/products/animate.html">Adobe Animate</a> and <a href="//createjs.com/easeljs">EaseJS</a> through GSAP's <a href="https://greensock.com/easelplugin/">EaselJSPlugin</a>.</p>
+        <div className="ipsGrid_span7 ipsType_left">
+        <h2 className="heading_large gs_reveal"><strong>SKIN DISEASE</strong>
+        <p>
+        피부질환
+          <br/>
+          <br/>
+        </p>
+        </h2>
+        <p className="gs_reveal"> 피부과학으로 피부질환을 치료하는 전문성과 경험이 다릅니다.
+        <div className="scrolldownLeft">scroll down</div>
+        </p>
         </div>
       </div>
-  
-      <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
-        <div class="ipsGrid_span7 ipsType_right">
-          <h2 class="heading_large gs_reveal"><strong>Award winning</strong> websites</h2>
-          <p class="gs_reveal">GSAP is used on over 8,500,000 sites and over 1,000 sites featured on <a href="https://www.awwwards.com/websites/gsap-animation/" target="_blank">Awwwards</a>. For some of our favorites, check out <a href="https://greensock.com/showcase/">our showcase</a>.</p>
+      <div id="treatment"></div>
+      <div className="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
+        <div className="ipsGrid_span7 ipsType_right">
+        <h2 className="heading_large gs_reveal"><strong>TREATMENT WITH VARIOS SATISFACTION LEVELS</strong>
+        <p>
+        만족도가 다른 시술
+          <br/>
+          <br/>
+        </p>
+        </h2>
+        <p className="gs_reveal"> - 개인의 특성에 맞춘 시술로 자연스러운 아름다움으로 효과를 극대화합니다.  <br/>- 보톡스, 필러, 실리프팅, 여드름 CROSS시술, 스컬트라, 리쥬란, 쥬베룩, 탈모메조치료
+        <div className="scrolldownRight">scroll down</div>
+        </p>
         </div>
   
-        <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromRight">
-          <div class="card">
-            <img width="479" src="https://picsum.photos/479/479?index=4" alt=""/>
+        <div className="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromRight">
+          <div className="card1" id="card3">
+            <img width="479" src={imgaD} alt=""/>
           </div>
         </div>
       </div>
   
+      <div id="cosmetic"></div>
+      <div className="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
+        <div className="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromLeft">
+          <div className="card1" id="card4">
+            <img width="479" src={imgaE} alt=""/>
+          </div>
+        </div>
+  
+        <div className="ipsGrid_span7 ipsType_left">
+        <h2 className="heading_large gs_reveal"><strong>COSMETIC CONSULTING & SKIN CARE</strong>
+        <p>
+           &nbsp;화장품컨설팅과 과학적 피부관리
+          <br/>
+          <br/>
+        </p>
+        </h2>
+        <p className="gs_reveal"> - 화장품과 메이크업을 잘 아는 여의사 피부과전문의가  <br/> &nbsp;&nbsp;개개인의 다른 피부상태를 분석하여나에게 맞는 화장품을 찾고, <br/> &nbsp;&nbsp;효과가 확실히 입증된 스킨케어 프로그램으로 피부를 관리합니다. 
+        <div className="scrolldownLeft">scroll down</div>
+        </p>
+        </div>
+      </div>
     </div>
-  
   </div>);
 }
 export default Service;

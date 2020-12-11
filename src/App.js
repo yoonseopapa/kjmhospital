@@ -2,22 +2,18 @@ import React, { useEffect } from "react";
 import { Route } from "react-router-dom";
 import { gsap } from "gsap";
 import "./styles/App.scss";
-// import Navigation from "./components/navigation";
-import CaseStudies from "./pages/caseStudies";
-import Approach from "./pages/approach";
-import Services from "./pages/services";
-import About from "./pages/about";
 import Home from "./pages/home";
-import Map from "./pages/map";
-
+import AboutStory from "./pages/aboutStory";
+import Laser from "./pages/laser";
+import SkinCare from "./pages/skinCare";
+import Treatment from "./pages/treatment";
 
 const routes = [
-  { path: "/", name: "Home", Component: Home },
-  { path: "/case-studies", name: "caseStudies", Component: CaseStudies },
-  { path: "/approach", name: "approach", Component: Approach },
-  { path: "/services", name: "services", Component: Services },
-  { path: "/about-us", name: "about", Component: About },
-  { path: "/map", name: "about", Component: Map }
+  { path: "/", name: "Home", Component: Home},
+  { path: "/aboutStory", name: "AboutStory", Component: AboutStory },
+  { path: "/laser", name: "Laser", Component: Laser },
+  { path: "/skinCare", name: "SkinCare", Component: SkinCare },
+  { path: "/treatment", name: "Treatment", Component: Treatment }
 ];
 
 function debounce(fn, ms) {
@@ -61,8 +57,6 @@ function App() {
           </Route>
         ))}
       </div>
-     
-      {/* <Navigation /> */}
     </>
   );
 }

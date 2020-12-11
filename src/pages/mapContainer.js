@@ -7,10 +7,22 @@ const MapContainer = () => {
     useEffect(() => {
         const container = document.getElementById('myMap');
 		const options = {
-			center: new kakao.maps.LatLng(33.450701, 126.570667),
+			center: new kakao.maps.LatLng(37.49215345328947, 127.0279254237956),
 			level: 3
-		};
+        };
+        
+        
         const map = new kakao.maps.Map(container, options);
+
+        const markerPosition  = new kakao.maps.LatLng(37.49215345328947, 127.0279254237956); 
+        
+        const marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
+        marker.setMap(map);    
+
+
     }, []);
 
     return (

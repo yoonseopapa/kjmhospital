@@ -1,136 +1,112 @@
 import React from "react";
-import {TweenMax,Power2,Power3, Expo, Circ } from "gsap";
+import { NavLink } from "react-router-dom";
+
 import Cases from "../components/cases";
 import Banner from "../components/banner";
 import Service from "../components/service"
-import Logo from "../assets/logo.png";
+import Map from "../pages/map";
+import Footer from "../pages/footer";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const Warrap = () => {
 
-  TweenMax.to('.left', 2, {
-    delay: .8,
-    width: '50%',
-    ease: Power2.easeInOut
-  })
-  
-  TweenMax.to('.right', 2, {
-    delay: .6,
-    width: '50%',
-    ease: Power3.easeInOut
-  })
-  
-  TweenMax.from('.nav', 2, {
-    delay: .8,
-    opacity: 0,
-    ease: Expo.easeInOut
-  })
-  
-  TweenMax.from('.text h1', 2, {
-    delay: .6,
-    x: 1000,
-    ease: Circ.easeInOut
-  })
-  
-  TweenMax.from('.text p', 2, {
-    delay: .7,
-    x: 1000,
-    ease: Circ.easeInOut
-  })
-  
-  TweenMax.to('.karina', 2, {
-    delay: 1.5,
-    width: '800px',
-    ease: Power2.easeInOut
-  })
-  
-  TweenMax.staggerFrom('.bottomnav ul li', 2, {
-    delay: 1,
-    x: 1000,
-    ease: Circ.easeInOut
-  }, 0.08)
-  
-  TweenMax.from('.info', 2, {
-    delay: 1.5,
-    y: 100,
-    ease: Circ.easeInOut
-  })
-  
-  TweenMax.from('.name', 2, {
-    delay: 1.5,
-    x: -600,
-    ease: Circ.easeInOut
-  })
-  
   return (
 <div>
 <body>
 
-  <div class="wrapper">
-    <div class="left"></div>
-    <div class="right"></div>
+  <div className="wrapper">
+    <div className="left"></div>
+    <div className="right"></div>
 
-    <nav class="navg">
+    <nav className="navg">
       <ul>
-        <li class="logo">unsplash</li>
-        <li class="menu"><i class="fa fa-bars"></i></li>
-        <li class="collection">collection</li>
-        <li class="explore">explore</li>
-        <li class="search">search</li>
-        <li class="profile">
-          <div class="img"></div>
+        <NavLink to='/' exact>
+        <li className="logo">pastel clinic</li>
+        </NavLink>
+
+        <NavLink to='/aboutStory' exact>
+        <li className="profilefirst ">profile</li>
+        </NavLink>
+
+        <NavLink to='/laser' exact>
+        <li className="laser ">laser</li>
+        </NavLink>
+
+        <NavLink to='/skinCare' exact>
+        <li className="location">skinCare</li>
+        </NavLink>
+
+        <NavLink to='/treatment' exact>
+        <li className="location">Treatment</li>
+        </NavLink>
+
+        
+        <a href="#aboutStory">
+        <li className="profile">
+          <div className="img"></div>
         </li>
+        </a>
       </ul>
     </nav>
 
-    <div class="content">
-      <div class="img-wrapper">
+    <div className="content">
+      <div className="img-wrapper">
       <Banner/>
-        {/* <div class="karina"></div> */}
       </div>
-
-      <div class="info">
+      <div className="info" id="info">
         <ul>
         <Cases/>
-          {/* <li>unsplash.com</li>
-          <li>@karinates</li>
-          <li>karinates.com</li>
-          <li><i class="fa fa-share-alt"></i></li> */}
         </ul>
       </div>
 
-      <div class="text">
+      <div className="text">
         <h1>pastel</h1>
-        <p align="right">Kim jung min Directer</p>
+        <p align="right">KIM JUNG MIN DIRECTOR</p>
       </div>
 
-      <div class="name">Clinic
+      <div className="name">Clinic
           {/* <img src={Logo}></img> */}
       </div>
 
-      <div class="bottomnav">
+      <div className="bottomnav">
         <ul>
-          <a href="#card">
-          <li data-hover="profile">profile</li>
+          <a href="#introduce">
+          <li data-hover="profile">INTRODUCE</li>
           </a>
-          <a href="#card1">
-          <li data-hover="portfolio">portfolio</li>
+          <a href="#aboutStory">
+          <li data-hover="profile">ABOUT STORY</li>
           </a>
-          <a href="#card2">
-          <li data-hover="contact">contact</li>
+          <a href="#laser">
+          <li data-hover="portfolio">LASER THERAPY</li>
           </a>
+          <a href="#skin">
+          <li data-hover="contact">SKIN DISEASE</li>
+          </a>
+          <a href="#treatment">
+          <li data-hover="contact">TREATMENT</li>
+          </a>
+          <a href="#cosmetic">
+          <li data-hover="contact">SKIN CARE</li>
+          </a>
+          <div id="collection"></div>
         </ul>
       </div>
 
-      <div class="scrolldown">scroll down</div>
-      <div class="next">up next</div>
-
+      <div className="scrolldown">scroll down</div>   
+      <div className="next">up next
+      <div id="introduce"></div> 
+      </div>
 
     </div>
-     <div class="contents"> 
-     <div class="left1"></div>
-    <div class="right1"></div>    
+     <div className="contents"> 
+     <div className="left1"></div>
+    <div className="right1"></div>
          <Service/>
-     </div>     
+         <Map/>
+         <Footer/>
+     </div>   
+       
   </div>
 </body>
 

@@ -2,6 +2,9 @@
 body {
   font-weight: 100%;
 }
+html {
+  visibility: visible;
+}
 .ipsType_right {
   text-align: right;
 }
@@ -9,7 +12,7 @@ body {
   text-align: center;
 }
 .cInnerContent {
-  max-width: 1240px;
+  max-width: 81%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -34,10 +37,10 @@ body {
   box-sizing: border-box;
 }
 .ipsGrid > .ipsGrid_span5 {
-  width: 40.42553191489362%;
+  width: 35.42553191489362%;
 }
 .ipsGrid > .ipsGrid_span7 {
-  width: 57.44680851063829%;
+  width: 61.44680851063829%;
 }
 .ipsGrid > [class*="ipsGrid_span"] {
   float: left;
@@ -50,23 +53,32 @@ body {
   display: flex;
   align-items: center;
 }
-.card {
-  margin-bottom: 30px;
+.card1 {
+  width: 88%;
+  margin-left:10%;
+  margin-top: 40%;
+  margin-bottom: 30%;
   border: 1px solid #cccccc;
-  border-radius: 8px;
   overflow: hidden;
-  background: #ffffff;
   box-shadow: 1px 1px 5px 1px #CCCCCC;
   transition: 0.3s;
 }
+
+
 .featured-image-container .card {
   padding: 10px;
-  height: 0;
+  height: 630px;
   padding-bottom: calc(100% - 10px);
 }
 h2.heading_large {
-  font-size: 1.8em;
+  font-size:1.5em;
 }
+
+h2.heading_large p {
+  letter-spacing: 5px;
+  font-size:0.5em;
+}
+
 img {
   max-width: 100%;
 }
@@ -75,8 +87,47 @@ img {
   margin: 200px auto;
 }
 
-.gs_reveal {
-  opacity: 0;
-  visibility: hidden;
-  transition: transform 0s;
+
+/* SCROLLDOWN
+=========================== */
+.scrolldownLeft {
+  position: absolute;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  left: 67%;
+  transform: rotate(-90deg);
+}
+
+.scrolldownLeft::before {
+  content: "";
+  border: 1px solid #fff;
+  width: 100px;
+  margin: 0 20px 0 0;
+  transform: translateY(-3px);
+  opacity: .5;
+  display: inline-block;
+}
+
+
+/* SCROLLDOWN
+=========================== */
+.scrolldownRight {
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  position: absolute;
+  transform: rotate(-90deg);
+}
+
+.scrolldownRight::before {
+  content: "";
+  border: 1px solid #fff;
+  width: 100px;
+  margin: 0 20px 0 0;
+  transform: translateY(-3px);
+  opacity: .5;
+  display: inline-block;
 }

@@ -4,11 +4,12 @@
   src: local('Raiderfont'), url("/fonts/Raiderfont.ttf") format('truetype');
 }
 
+
 * {
+  color: #ffffff;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 .carousel-inner{
   box-shadow: 0px 0px 10px black;
@@ -29,6 +30,11 @@ ul {
 }
 
 @include media("<=phone") {
+  .left{
+    display: none;
+  }
+
+
   .wrapper{
     width: 100%;
     display: flex;
@@ -36,9 +42,7 @@ ul {
   .content, .navg{
     display: none;
   }
-  .left, .right, .left1, .right1 {
-    width: 50%;
-  }
+ 
   .cInnerContent{
     width: 100%;
   }
@@ -54,7 +58,7 @@ ul {
 .left,
 .right {
   position: absolute;
-  height: 500%;
+  height: 700%;
   z-index: -1;
 
 }
@@ -108,7 +112,6 @@ ul {
 }
 
 .navg .logo {
-  flex: 1;
   font-size: 18px;
   letter-spacing: 0;
 }
@@ -157,14 +160,13 @@ ul {
 }
 
 .info {
-  top: 100%;
-  width: 80%;
+  top: 130%;
+  width: 95%;
   position: absolute;
   bottom: 0;
-  left: 140px;
+  left: 3%;
   background: rgba(0, 0, 0, .8);
   box-shadow: 5px 10px 20px white;
-  // padding: 0 10px;
 }
 
 .info ul li {
@@ -184,20 +186,21 @@ ul {
 .text {
   position: absolute;
   top: 35%;
-  right: 28%;
+  right: 4%;
   transform: translateY(-50%);
 }
 
 .text h1 {
   font-size: 90px;
-  
   color:#7fffd4;
   font-family: 'Raiderfont';
   text-transform: uppercase;
+  // margin-left: 25%;
 }
 
 .text p {
-  font-size: 20px;
+  font-size: 12px;
+  letter-spacing: 3px;
   color: #fff;
   font-family: monospace;
 }
@@ -218,14 +221,14 @@ ul {
 
 .bottomnav {
   position: absolute;
-  bottom: 35%;
-  right: 68%;
+  bottom: 13%;
+  right: 2%;
 }
 
 .bottomnav ul a li {
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: 15px;
+  letter-spacing: 8px;
   margin-top: 20px;
 	-webkit-transition: -webkit-transform 0.3s;
 	-moz-transition: -moz-transform 0.3s;
@@ -286,8 +289,8 @@ ul {
 
 .next {
   position: absolute;
-  left: 58%;
-  top : 96%;
+  left: 70%;
+  top : 125%;
   font-size: 10px;
   letter-spacing: 8px;
   font-weight: 500;
@@ -308,6 +311,5 @@ ul {
 
 
 .contents{
-margin-top:70%;
-
+margin-top:100%;
 }
