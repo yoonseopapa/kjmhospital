@@ -64,7 +64,7 @@ const Service = () => {
             <div id="laser"></div>
           </div>
         </div>
-        <div className="ipsGrid_span7 ipsType_left">
+        <div className="ipsGrid_span7 ipsType_left1">
           <h2 className="heading_large gs_reveal"><strong>ABOUT STORY</strong>
           </h2>
           <p className="gs_reveal"> 정확한 진단과 책임있는 진료를 약속하는 <br/>피부과 전문의 김정민 원장.
@@ -73,7 +73,7 @@ const Service = () => {
       </div>
       
       <div className="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
-        <div className="ipsGrid_span7 ipsType_right">
+        <div className="ipsGrid_span7 ipsType_right1">
         <h2 className="heading_large gs_reveal1"><strong>LASER THERAPY</strong>
          <p>
           레이저 치료
@@ -87,7 +87,7 @@ const Service = () => {
         </div>
        
         <div className="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromRight">
-          <div className="card1" id="card1">
+          <div className="card2" id="card1">
             <img width="479" src={imgaB} alt=""/>
           </div>
         </div>
@@ -96,12 +96,12 @@ const Service = () => {
       <div id="skin"></div>
       <div className="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
         <div className="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromLeft">
-          <div className="card1" id="card2">
+          <div className="card3" id="card2">
             <img width="479" src={imgaC} alt=""/>
           </div>
         </div>
   
-        <div className="ipsGrid_span7 ipsType_left">
+        <div className="ipsGrid_span7 ipsType_left2">
         <h2 className="heading_large gs_reveal"><strong>SKIN DISEASE</strong>
         <p>
         피부질환
@@ -116,7 +116,7 @@ const Service = () => {
       </div>
       <div id="treatment"></div>
       <div className="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
-        <div className="ipsGrid_span7 ipsType_right">
+        <div className="ipsGrid_span7 ipsType_right2">
         <h2 className="heading_large gs_reveal"><strong>TREATMENT WITH VARIOS SATISFACTION LEVELS</strong>
         <p>
         만족도가 다른 시술
@@ -130,7 +130,7 @@ const Service = () => {
         </div>
   
         <div className="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromRight">
-          <div className="card1" id="card3">
+          <div className="card4" id="card3">
             <img width="479" src={imgaD} alt=""/>
           </div>
         </div>
@@ -139,12 +139,12 @@ const Service = () => {
       <div id="cosmetic"></div>
       <div className="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
         <div className="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromLeft">
-          <div className="card1" id="card4">
+          <div className="card5" id="card4">
             <img width="479" src={imgaE} alt=""/>
           </div>
         </div>
   
-        <div className="ipsGrid_span7 ipsType_left">
+        <div className="ipsGrid_span7 ipsType_left3">
         <h2 className="heading_large gs_reveal"><strong>COSMETIC CONSULTING & SKIN CARE</strong>
         <p>
            &nbsp;화장품컨설팅과 과학적 피부관리

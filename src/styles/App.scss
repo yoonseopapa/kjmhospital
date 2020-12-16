@@ -32,6 +32,9 @@ html {
     background-color: #ffeecc;
   }
   .carousel {
+    @include media("<=phone") {
+      width: 90%;
+    }
     height: calc(var(--vh, 1vh) * 65);
     width: 78%;
   }

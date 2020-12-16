@@ -34,11 +34,11 @@ const Warrap = () => {
         </NavLink>
 
         <NavLink to='/skinCare' exact>
-        <li className="location">skinCare</li>
+        <li className="skinCare">skinCare</li>
         </NavLink>
 
         <NavLink to='/treatment' exact>
-        <li className="location">Treatment</li>
+        <li className="treatment">Treatment</li>
         </NavLink>
 
         
@@ -95,7 +95,7 @@ const Warrap = () => {
 
       <div className="scrolldown">scroll down</div>   
       <div className="next">up next
-      <div id="introduce"></div> 
+      <div className="introduce" id="introduce" ></div> 
       </div>
 
     </div>
@@ -103,10 +103,9 @@ const Warrap = () => {
      <div className="left1"></div>
     <div className="right1"></div>
          <Service/>
-         <Map/>
-         <Footer/>
      </div>   
-       
+     <Map/>
+         <Footer/>
   </div>
 </body>
 

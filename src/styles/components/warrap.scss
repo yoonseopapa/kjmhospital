@@ -11,7 +11,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+.wrapper{
+  @include media("<=phone") {
+    position: absolute;
+    width:104%;
+    height: 100%;
+  }
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .carousel-inner{
+  @include media("<=phone") {
+  height: 100%;
+  }
   box-shadow: 0px 0px 10px black;
   height: 500px
 }
@@ -30,33 +45,31 @@ ul {
 }
 
 @include media("<=phone") {
-  .left{
-    display: none;
-  }
 
-
-  .wrapper{
-    width: 100%;
-    display: flex;
-  }
-  .content, .navg{
+  // .wrapper{
+  //   width: 100%;
+  //   display: flex;
+  // }
+  .text, .name, .bottomnav, .left1, .right1 {
     display: none;
   }
  
-  .cInnerContent{
-    width: 100%;
-  }
-  .ipsGrid > [class*="ipsGrid_span"] {
-    width: 65%;
-    font-size: 10px;
-    transform: translate(5px, 0px);
-  }
+  // .cInnerContent{
+  //   width: 100%;
+  // }
+  // .ipsGrid > [class*="ipsGrid_span"] {
+  //   margin-top: -10%;
+  //   width: 100%;
+  //   font-size: 10px;
+  //   transform: translate(5px, 0px);
+  // }
 
 
 }
 
 .left,
 .right {
+  
   position: absolute;
   height: 700%;
   z-index: -1;
@@ -64,6 +77,10 @@ ul {
 }
 
 .left {
+  @include media("<=phone") {
+    background: black;
+  }
+
   background: #B3B4AF;
   left: 0%;
   width: 30%;
@@ -91,6 +108,40 @@ ul {
   background: #191921;
   right: 0%;
   width: 30%;
+}
+
+.navg{
+  .profilefirst{
+    @include media("<=phone") {
+      display: none;
+      }
+  }
+  .laser{
+    @include media("<=phone") {
+      display: none;
+      }
+  }
+  .skinCare{
+    @include media("<=phone") {
+      display: none;
+      }
+  }
+
+  .treatment{
+    @include media("<=phone") {
+      display: none;
+      }
+  }
+  .profile{
+    @include media("<=phone") {
+      display: none;
+      }
+  }
+
+  @include media("<=phone") {
+  position: absolute;
+  width: 100%;
+  }
 }
 
 .navg ul {
@@ -147,6 +198,11 @@ ul {
 }
 
 .img-wrapper {
+  @include media("<=phone") {
+    position: absolute;
+    width: 100%;
+    left: 3%;
+  }
   position: absolute;
   bottom: 90px;
   left: 140px;
@@ -160,6 +216,12 @@ ul {
 }
 
 .info {
+  @include media("<=phone") {
+    position: absolute;
+    width: 95%;
+    left: 2%;
+    top: 95%;
+  }
   top: 130%;
   width: 95%;
   position: absolute;
@@ -265,6 +327,10 @@ ul {
 /* SCROLLDOWN
 =========================== */
 .scrolldown {
+  @include media("<=phone") {
+    display: none;
+
+  }
   font-size: 10px;
   font-weight: 500;
   text-transform: uppercase;
@@ -288,6 +354,11 @@ ul {
 
 
 .next {
+  @include media("<=phone") {
+    position: absolute;
+    top: 90%;
+    left: 25%;
+  }
   position: absolute;
   left: 70%;
   top : 125%;
@@ -297,6 +368,10 @@ ul {
   text-transform: uppercase;
   margin-bottom: 30px;
   color: white
+}
+
+.introduce{
+  position: absolute;
 }
 
 .next::after {
@@ -311,5 +386,10 @@ ul {
 
 
 .contents{
+  @include media("<=phone") {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+  }
 margin-top:100%;
 }
