@@ -46,7 +46,7 @@ const Map = () => {
           </h3>
         </div>
         <div className='mapKakao'>
-          <MapContainer/>
+          {/* <MapContainer/> */}
           </div>
       </div>
     </section>
