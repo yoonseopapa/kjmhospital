@@ -1,27 +1,68 @@
 import React from "react";
 // import { ReactComponent as RightArrow } from "../assets/arrow-right.svg";
 import { Carousel } from "react-bootstrap";
-import imgaA from "../assets/winter.jpg";
-import imgaB from "../assets/winter.jpg";
-import imgaC from "../assets/winter.jpg";
+import imgaA from "../assets/main1.jpg";
+import imgaB from "../assets/main2.jpg";
+import imgaC from "../assets/main3.jpg";
 
 
 
 const Banner = () => {
   return (
     <Carousel>
-  <Carousel.Item interval={2000}>
+  <Carousel.Item interval={6000}>
+  <div className="bannerTitle">
+        <p> J.M만의 전문성</p>
+        {/* <h1> Laser 치료</h1> */}
+        <h3>정확한 진단과 치료는 피부과전문의의 전문분야 입니다.</h3>
+        {/* <h2 >ㅡㅡㅡ
+        <br/>개개인의 얼굴타입의 분석을 바탕으로 진단이 
+        <br/>정확해야 효과적인 치료,좋은 결과로 이어질수 
+        <br/>있습니다.
+        </h2> */}
+        </div>
+        <div className="bannerContents">
+        {/* <p> 파스텔만의 전문성</p> */}
+        {/* <h1> Laser 치료</h1> */}
+        {/* <h3>정확한 진단과 치료는 피부과전문의의 전문분야 입니다.</h3> */}
+        <h2 >
+        <br/>개개인의 얼굴타입의 분석을 바탕으로 진단이 
+        <br/>정확해야 효과적인 치료,좋은 결과로 이어질수 
+        <br/>있습니다.
+        </h2>
+        </div>  
     <img
       className="d-block w-100"
       src= {imgaA}
       alt="First slide"
     />
+   
     <Carousel.Caption>
     {/* <h3>김정민 원장</h3> 
       <p>정확한 진단과 책임있는 진료를 약속하는 피부과전문</p>*/}
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item interval={2000}>
+  <Carousel.Item interval={6000}>
+  <div className="bannerTitle">
+        <p>  J.M만의 전문성</p>
+        {/* <h1> Laser 치료</h1> */}
+        <h3>정확한 진단과 치료는 피부과전문의의 전문분야 입니다.</h3>
+        {/* <h2 >ㅡㅡㅡ
+        <br/>개개인의 얼굴타입의 분석을 바탕으로 진단이 
+        <br/>정확해야 효과적인 치료,좋은 결과로 이어질수 
+        <br/>있습니다.
+        </h2> */}
+        </div>
+        <div className="bannerContents">
+        {/* <p> 파스텔만의 전문성</p> */}
+        {/* <h1> Laser 치료</h1> */}
+        {/* <h3>정확한 진단과 치료는 피부과전문의의 전문분야 입니다.</h3> */}
+        <h2 >
+        <br/>개개인의 얼굴타입의 분석을 바탕으로 진단이 
+        <br/>정확해야 효과적인 치료,좋은 결과로 이어질수 
+        <br/>있습니다.
+        </h2>
+        </div>  
     <img
       className="d-block w-100"
       src={imgaB}
@@ -32,7 +73,27 @@ const Banner = () => {
       <p>믿고다닐수 있는 피부과다운 피부과, 파스텔피부과를 소개합니다.</p>*/}
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item interval={2000}>
+  <Carousel.Item interval={6000}>
+  <div className="bannerTitle">
+        <p>  J.M만의 전문성</p>
+        {/* <h1> Laser 치료</h1> */}
+        <h3>정확한 진단과 치료는 피부과전문의의 전문분야 입니다.</h3>
+        {/* <h2 >ㅡㅡㅡ
+        <br/>개개인의 얼굴타입의 분석을 바탕으로 진단이 
+        <br/>정확해야 효과적인 치료,좋은 결과로 이어질수 
+        <br/>있습니다.
+        </h2> */}
+        </div>
+        <div className="bannerContents">
+        {/* <p> 파스텔만의 전문성</p> */}
+        {/* <h1> Laser 치료</h1> */}
+        {/* <h3>정확한 진단과 치료는 피부과전문의의 전문분야 입니다.</h3> */}
+        <h2 >
+        <br/>개개인의 얼굴타입의 분석을 바탕으로 진단이 
+        <br/>정확해야 효과적인 치료,좋은 결과로 이어질수 
+        <br/>있습니다.
+        </h2>
+        </div>  
     <img
       className="d-block w-100"
       src={imgaC}

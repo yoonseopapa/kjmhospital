@@ -27,8 +27,8 @@
   @include media("<=phone") {
   height: 100%;
   }
-  box-shadow: 0px 0px 10px black;
-  height: 500px
+  // box-shadow: 0px 0px 10px #9e8f21;
+  // height: 90%
 }
 body {
   position: absolute;
@@ -67,30 +67,18 @@ ul {
 
 }
 
+
+
 .left,
 .right {
   
   position: absolute;
-  height: 700%;
+  height: 1000%;
   z-index: -1;
 
 }
 
-.left {
-  @include media("<=phone") {
-    background: black;
-  }
 
-  background: #B3B4AF;
-  left: 0%;
-  width: 30%;
-}
-
-.right {
-  background: #191921;
-  right: 0%;
-  width: 70%;
-}
 
 .left1,
 .right1 {
@@ -99,23 +87,27 @@ ul {
   z-index: -1;
 }
 .left1 {
-  background: #B3B4AF;
+  background: white;
+  
   left: 0%;
   width: 70%;
 }
 
 .right1 {
-  background: #191921;
+  background: white;
+  background-image: url("/assets/gold1.jpg");
   right: 0%;
   width: 30%;
 }
 
 .navg{
+  margin-bottom: -2rem;
   .profilefirst{
     @include media("<=phone") {
       display: none;
       }
   }
+
   .laser{
     @include media("<=phone") {
       display: none;
@@ -132,6 +124,16 @@ ul {
       display: none;
       }
   }
+  .logoTitle{
+    position: absolute;
+    color: #a97809;
+    font-size: 2.0rem;
+    font-family: serif;
+    font-weight: 900;
+    margin-left: -10%;
+    margin-top: -1.5%;
+  }
+
   .profile{
     @include media("<=phone") {
       display: none;
@@ -148,16 +150,16 @@ ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 80px;
   padding: 0 20px;
+  // background-color: #b19a10;
 }
 
 .navg ul li {
   display: inline-block;
-  color: #fff;
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 8px;
+  font-size: 18px;
   font-weight: 600;
   padding: 0 30px;
 }
@@ -165,6 +167,8 @@ ul {
 .navg .logo {
   font-size: 18px;
   letter-spacing: 0;
+  width:4%;
+  margin-bottom: 1%;
 }
 
 .navg .menu {
@@ -203,9 +207,9 @@ ul {
     width: 100%;
     left: 3%;
   }
-  position: absolute;
+  // position: absolute;
   bottom: 90px;
-  left: 140px;
+  // left: 80px;
 }
 
 .img-wrapper .karina {
@@ -219,10 +223,12 @@ ul {
   @include media("<=phone") {
     position: absolute;
     width: 95%;
+    height:50px;
     left: 2%;
     top: 95%;
+    background: rgba(255, 255, 255, 0.8);
   }
-  top: 130%;
+  top: 200%;
   width: 95%;
   position: absolute;
   bottom: 0;
@@ -254,7 +260,7 @@ ul {
 
 .text h1 {
   font-size: 90px;
-  color:#7fffd4;
+  color:#a97809;
   font-family: 'Raiderfont';
   text-transform: uppercase;
   // margin-left: 25%;
@@ -263,7 +269,7 @@ ul {
 .text p {
   font-size: 12px;
   letter-spacing: 3px;
-  color: #fff;
+  color: #a97809;
   font-family: monospace;
 }
 
@@ -276,7 +282,7 @@ ul {
   font-size: 90px;
   font-family: 'Raiderfont';
   text-transform: uppercase;
-  color: aquamarine
+  color:#98904d
   // -webkit-text-stroke: 2px #fff;
   // background-color: rgb(255, 0, 0);
 }
@@ -288,7 +294,7 @@ ul {
 }
 
 .bottomnav ul a li {
-  color: #fff;
+  color: #a97809;
   text-transform: uppercase;
   letter-spacing: 8px;
   margin-top: 20px;
@@ -342,6 +348,21 @@ ul {
   transform: rotate(-90deg);
 }
 
+.scrolldownRight {
+  @include media("<=phone") {
+    display: none;
+
+  }
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color:rgb(255, 255, 255);
+  position: absolute;
+  left: 80%;
+  transform: rotate(-90deg);
+}
+
 .scrolldown::before {
   content: "";
   border: 1px solid #fff;
@@ -352,7 +373,15 @@ ul {
   display: inline-block;
 }
 
-
+.scrolldownRight::before {
+  content: "";
+  border: 1px solid rgb(255, 255, 255);
+  width: 100px;
+  margin: 0 20px 0 0;
+  transform: translateY(-3px);
+  opacity: .5;
+  display: inline-block;
+}
 .next {
   @include media("<=phone") {
     position: absolute;
@@ -360,14 +389,14 @@ ul {
     left: 25%;
   }
   position: absolute;
-  left: 70%;
-  top : 125%;
-  font-size: 10px;
+  left: 10%;
+  top : 104%;
+  font-size: 12px;
   letter-spacing: 8px;
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 30px;
-  color: white
+  color: rgb(255, 255, 255)
 }
 
 .introduce{

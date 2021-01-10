@@ -15,23 +15,23 @@ const Laser = () => {
 <nav className="navg">
       <ul>
         <NavLink to='/' exact>
-        <li class="logo">pastel clinic</li>
+        <li className="logo">pastel clinic</li>
         </NavLink>
 
         <NavLink to='/aboutStory' exact>
-        <li class="profilefirst ">profile</li>
+        <li className="profilefirst ">profile</li>
         </NavLink>
 
         <NavLink to='/laser' exact>
-        <li class="laser ">laser</li>
+        <li className="laser ">laser</li>
         </NavLink>
 
         <NavLink to='/skinCare' exact>
-        <li class="location">skinCare</li>
+        <li className="location">skinCare</li>
         </NavLink>
 
         <NavLink to='/treatment' exact>
-        <li class="location">Treatment</li>
+        <li className="location">Treatment</li>
         </NavLink>
       </ul>
     </nav>
@@ -50,8 +50,8 @@ const Laser = () => {
         <br/>있습니다.
         </h2>
         </div>
-    <div className={classes.Container} >
-    <video autoPlay="autoplay" loop="loop" muted className={classes.Video}>
+    <div className="{classes.Container} ">
+    <video autoPlay="autoplay" loop="loop" muted className={classes.Video} style={styles.image} >
                 <source src={playerA} type="video/mp4" />
             </video>
         </div>
@@ -111,5 +111,12 @@ const Laser = () => {
 </div>
   );
 };
+
+
+const styles ={
+image:{
+width : '100%',
+}
+}
 
 export default Laser;
