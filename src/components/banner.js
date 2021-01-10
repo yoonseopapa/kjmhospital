@@ -1,9 +1,9 @@
 import React from "react";
 // import { ReactComponent as RightArrow } from "../assets/arrow-right.svg";
 import { Carousel } from "react-bootstrap";
-import imgaA from "../assets/foot.png";
-import imgaB from "../assets/skin1.png";
-import imgaC from "../assets/skin1.png";
+import imgaA from "../assets/main1.jpg";
+import imgaB from "../assets/main2.jpg";
+import imgaC from "../assets/main3.jpg";
 
 
 
@@ -12,15 +12,25 @@ const Banner = () => {
     <Carousel>
   <Carousel.Item interval={6000}>
   <div className="bannerTitle">
-        <p> 파스텔만의 전문성</p>
-        <h1> Laser 치료</h1>
+        <p> J.M만의 전문성</p>
+        {/* <h1> Laser 치료</h1> */}
         <h3>정확한 진단과 치료는 피부과전문의의 전문분야 입니다.</h3>
-        <h2 >ㅡㅡㅡ
+        {/* <h2 >ㅡㅡㅡ
+        <br/>개개인의 얼굴타입의 분석을 바탕으로 진단이 
+        <br/>정확해야 효과적인 치료,좋은 결과로 이어질수 
+        <br/>있습니다.
+        </h2> */}
+        </div>
+        <div className="bannerContents">
+        {/* <p> 파스텔만의 전문성</p> */}
+        {/* <h1> Laser 치료</h1> */}
+        {/* <h3>정확한 진단과 치료는 피부과전문의의 전문분야 입니다.</h3> */}
+        <h2 >
         <br/>개개인의 얼굴타입의 분석을 바탕으로 진단이 
         <br/>정확해야 효과적인 치료,좋은 결과로 이어질수 
         <br/>있습니다.
         </h2>
-        </div>
+        </div>  
     <img
       className="d-block w-100"
       src= {imgaA}
@@ -34,15 +44,25 @@ const Banner = () => {
   </Carousel.Item>
   <Carousel.Item interval={6000}>
   <div className="bannerTitle">
-        <p> 파스텔만의 전문성</p>
-        <h1> SKIN 치료</h1>
+        <p>  J.M만의 전문성</p>
+        {/* <h1> Laser 치료</h1> */}
         <h3>정확한 진단과 치료는 피부과전문의의 전문분야 입니다.</h3>
-        <h2 >ㅡㅡㅡ
+        {/* <h2 >ㅡㅡㅡ
+        <br/>개개인의 얼굴타입의 분석을 바탕으로 진단이 
+        <br/>정확해야 효과적인 치료,좋은 결과로 이어질수 
+        <br/>있습니다.
+        </h2> */}
+        </div>
+        <div className="bannerContents">
+        {/* <p> 파스텔만의 전문성</p> */}
+        {/* <h1> Laser 치료</h1> */}
+        {/* <h3>정확한 진단과 치료는 피부과전문의의 전문분야 입니다.</h3> */}
+        <h2 >
         <br/>개개인의 얼굴타입의 분석을 바탕으로 진단이 
         <br/>정확해야 효과적인 치료,좋은 결과로 이어질수 
         <br/>있습니다.
         </h2>
-        </div>
+        </div>  
     <img
       className="d-block w-100"
       src={imgaB}
@@ -55,15 +75,25 @@ const Banner = () => {
   </Carousel.Item>
   <Carousel.Item interval={6000}>
   <div className="bannerTitle">
-        <p> 파스텔만의 전문성</p>
-        <h1> 발꼬락치료</h1>
+        <p>  J.M만의 전문성</p>
+        {/* <h1> Laser 치료</h1> */}
         <h3>정확한 진단과 치료는 피부과전문의의 전문분야 입니다.</h3>
-        <h2 >ㅡㅡㅡ
+        {/* <h2 >ㅡㅡㅡ
+        <br/>개개인의 얼굴타입의 분석을 바탕으로 진단이 
+        <br/>정확해야 효과적인 치료,좋은 결과로 이어질수 
+        <br/>있습니다.
+        </h2> */}
+        </div>
+        <div className="bannerContents">
+        {/* <p> 파스텔만의 전문성</p> */}
+        {/* <h1> Laser 치료</h1> */}
+        {/* <h3>정확한 진단과 치료는 피부과전문의의 전문분야 입니다.</h3> */}
+        <h2 >
         <br/>개개인의 얼굴타입의 분석을 바탕으로 진단이 
         <br/>정확해야 효과적인 치료,좋은 결과로 이어질수 
         <br/>있습니다.
         </h2>
-        </div>
+        </div>  
     <img
       className="d-block w-100"
       src={imgaC}

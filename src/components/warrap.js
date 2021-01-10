@@ -72,16 +72,16 @@ const Warrap = () => {
         </ul>
       </div>
 
-      <div className="text">
+      {/* <div className="text">
         <h1>J.M</h1>
         <p align="right">KIM JUNG MIN DIRECTOR</p>
-      </div>
+      </div> */}
 
       {/* <div className="name">Clinic
           {<img src={Logo}></img> }
       </div> */}
 
-      <div className="bottomnav">
+      {/* <div className="bottomnav">
         <ul>
           <a href="#introduce">
           <li data-hover="profile">INTRODUCE</li>
@@ -103,7 +103,7 @@ const Warrap = () => {
           </a>
           <div id="collection"></div>
         </ul>
-      </div>
+      </div> */}
 
       <div className="scrolldownRight">scroll down</div>   
       <div className="next">up next

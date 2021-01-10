@@ -27,8 +27,8 @@
   @include media("<=phone") {
   height: 100%;
   }
-  box-shadow: 0px 0px 10px #9e8f21;
-  height: 105%
+  // box-shadow: 0px 0px 10px #9e8f21;
+  // height: 90%
 }
 body {
   position: absolute;
@@ -78,24 +78,7 @@ ul {
 
 }
 
-.left {
-  @include media("<=phone") {
-    background: black;
-  }
-  background-image: url("/assets/gold1.jpg");
-  // background: #B3B4AF;
 
-  left: 0%;
-  width: 30%;
-}
-
-.right {
-  background: white;
-  // background-image: url("/assets/gold4.jpg");
-  right: 0%;
-  width: 70%;
-  opacity: 0.2;
-}
 
 .left1,
 .right1 {
@@ -118,11 +101,13 @@ ul {
 }
 
 .navg{
+  margin-bottom: -2rem;
   .profilefirst{
     @include media("<=phone") {
       display: none;
       }
   }
+
   .laser{
     @include media("<=phone") {
       display: none;
@@ -140,12 +125,13 @@ ul {
       }
   }
   .logoTitle{
-    color: #ffffff;
+    position: absolute;
+    color: #a97809;
     font-size: 2.0rem;
-    font-family: 'Raiderfont';
-    margin-top: 5%;
-    margin-left: -16%;
-    text-shadow: 0 0 10px black;
+    font-family: serif;
+    font-weight: 900;
+    margin-left: -10%;
+    margin-top: -1.5%;
   }
 
   .profile{
@@ -170,7 +156,7 @@ ul {
 
 .navg ul li {
   display: inline-block;
-  color: #b18b00;
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 18px;
@@ -181,7 +167,8 @@ ul {
 .navg .logo {
   font-size: 18px;
   letter-spacing: 0;
-  width:5%;
+  width:4%;
+  margin-bottom: 1%;
 }
 
 .navg .menu {
@@ -220,9 +207,9 @@ ul {
     width: 100%;
     left: 3%;
   }
-  position: absolute;
+  // position: absolute;
   bottom: 90px;
-  left: 80px;
+  // left: 80px;
 }
 
 .img-wrapper .karina {
@@ -273,7 +260,7 @@ ul {
 
 .text h1 {
   font-size: 90px;
-  color:#a99824;
+  color:#a97809;
   font-family: 'Raiderfont';
   text-transform: uppercase;
   // margin-left: 25%;
@@ -282,7 +269,7 @@ ul {
 .text p {
   font-size: 12px;
   letter-spacing: 3px;
-  color: #98904d;
+  color: #a97809;
   font-family: monospace;
 }
 
@@ -307,7 +294,7 @@ ul {
 }
 
 .bottomnav ul a li {
-  color: #b18b00;
+  color: #a97809;
   text-transform: uppercase;
   letter-spacing: 8px;
   margin-top: 20px;
@@ -366,14 +353,13 @@ ul {
     display: none;
 
   }
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 5px;
-  color:black;
+  color:rgb(255, 255, 255);
   position: absolute;
-  bottom: 110px;
-  left: 74%;
+  left: 80%;
   transform: rotate(-90deg);
 }
 
@@ -389,7 +375,7 @@ ul {
 
 .scrolldownRight::before {
   content: "";
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
   width: 100px;
   margin: 0 20px 0 0;
   transform: translateY(-3px);
@@ -403,14 +389,14 @@ ul {
     left: 25%;
   }
   position: absolute;
-  left: 70%;
-  top : 113%;
-  font-size: 10px;
+  left: 10%;
+  top : 104%;
+  font-size: 12px;
   letter-spacing: 8px;
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 30px;
-  color: white
+  color: rgb(255, 255, 255)
 }
 
 .introduce{

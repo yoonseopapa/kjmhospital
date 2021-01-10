@@ -50,8 +50,8 @@ const Laser = () => {
         <br/>있습니다.
         </h2>
         </div>
-    <div className={classes.Container} >
-    <video autoPlay="autoplay" loop="loop" muted className={classes.Video}>
+    <div className="{classes.Container} ">
+    <video autoPlay="autoplay" loop="loop" muted className={classes.Video} style={styles.image} >
                 <source src={playerA} type="video/mp4" />
             </video>
         </div>
@@ -111,5 +111,12 @@ const Laser = () => {
 </div>
   );
 };
+
+
+const styles ={
+image:{
+width : '100%',
+}
+}
 
 export default Laser;

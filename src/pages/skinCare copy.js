@@ -51,7 +51,7 @@ const SkinCare = () => {
 
         </h2>
         </div>
-    <div className={classes.Container} >
+    <div className="videoFile" >
             <video autoPlay="autoplay" loop="loop" muted className={classes.Video}>
                 <source src={playerA} type="video/mp4" />
             </video>

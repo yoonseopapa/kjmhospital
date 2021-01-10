@@ -13,18 +13,19 @@
 }
 
 .intro {
+  background-size: 100%;
   background-image: url("/assets/gold3.jpg");
   position: absolute;
   width: 100%;
   height: 200%;
-  top: 110%;
+  top: 100%;
   border-top: 80px solid black;
   border-bottom: 90vh solid black
 }
 .introTitle{
   background-color: #f4f3ed;
   height: 40vh;
-  width: 30%;
+  width: 22%;
   margin-left: 50%;
   margin-top: 7%;
 }
@@ -75,10 +76,13 @@ color:white;
   font-size: 2.4rem;
   color: #b9901be0
 }
+.introContents{
+  margin-top: 5%;
+}
 
 .introTitle h3{
 
-  font-family: cursive;
+  font-family: fantasy;
   text-align: center;
   font-size:2.3rem;
   color:#98904d
