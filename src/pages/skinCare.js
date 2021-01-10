@@ -58,6 +58,24 @@ const SkinCare = () => {
         </div>
 </div>
 
+<div className="features price">
+          <div className="leftContents">
+            <img className="firstCardContents" src={imgaA} alt=""/>
+            <div className="story">
+        <h2 > 대학교수의 임상경험과 여자 피부과전문의로서의 섬세함으로 
+        <br/>정확하게 진단하여 해결합니다. 
+        <br/>
+        <br/>피부 질환과 미용은 별개의 문제가 아니며 피부의 근본적인 개선을 위해 
+        <br/>노력합니다. </h2>
+        <br/>
+        <br/>
+        </div>
+        <div>
+          </div>
+          </div>
+    </div>
+
+
 
     <div className="features aging">
           <div className="leftContents">

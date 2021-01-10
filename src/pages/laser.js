@@ -15,23 +15,23 @@ const Laser = () => {
 <nav className="navg">
       <ul>
         <NavLink to='/' exact>
-        <li class="logo">pastel clinic</li>
+        <li className="logo">pastel clinic</li>
         </NavLink>
 
         <NavLink to='/aboutStory' exact>
-        <li class="profilefirst ">profile</li>
+        <li className="profilefirst ">profile</li>
         </NavLink>
 
         <NavLink to='/laser' exact>
-        <li class="laser ">laser</li>
+        <li className="laser ">laser</li>
         </NavLink>
 
         <NavLink to='/skinCare' exact>
-        <li class="location">skinCare</li>
+        <li className="location">skinCare</li>
         </NavLink>
 
         <NavLink to='/treatment' exact>
-        <li class="location">Treatment</li>
+        <li className="location">Treatment</li>
         </NavLink>
       </ul>
     </nav>

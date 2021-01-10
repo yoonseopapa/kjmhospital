@@ -2,11 +2,14 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 import Cases from "../components/cases";
+import Intro from "../components/intro";
 import Banner from "../components/banner";
+import Empty from "../components/empty";
 import Service from "../components/service"
 import Map from "../pages/map";
 import Footer from "../pages/footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import imgaA from "../assets/logo1.png";
 
 
 const Warrap = () => {
@@ -20,9 +23,13 @@ const Warrap = () => {
     <div className="right"></div>
 
     <nav className="navg">
+    
       <ul>
+      <img className="logo"
+      src= {imgaA}
+    />
         <NavLink to='/' exact>
-        <li className="logo">pastel clinic</li>
+        <li className="logoTitle">j.m Clinic</li>
         </NavLink>
 
         <NavLink to='/aboutStory' exact>
@@ -54,20 +61,25 @@ const Warrap = () => {
       <div className="img-wrapper">
       <Banner/>
       </div>
+      <div className="introSection">
+      {/* <Empty/> */}
+      <Intro/>
+      </div>
       <div className="info" id="info">
         <ul>
+       
         <Cases/>
         </ul>
       </div>
 
       <div className="text">
-        <h1>pastel</h1>
+        <h1>J.M</h1>
         <p align="right">KIM JUNG MIN DIRECTOR</p>
       </div>
 
-      <div className="name">Clinic
-          {/* <img src={Logo}></img> */}
-      </div>
+      {/* <div className="name">Clinic
+          {<img src={Logo}></img> }
+      </div> */}
 
       <div className="bottomnav">
         <ul>
@@ -93,7 +105,7 @@ const Warrap = () => {
         </ul>
       </div>
 
-      <div className="scrolldown">scroll down</div>   
+      <div className="scrolldownRight">scroll down</div>   
       <div className="next">up next
       <div className="introduce" id="introduce" ></div> 
       </div>

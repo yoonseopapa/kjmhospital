@@ -15,8 +15,10 @@
 }
 
 .cases {
+  margin-top: 20%;
   .rec-pagination{
     display: none;
+    margin-top: 10%;
   }
 
   /**버튼 숨기기**/
@@ -71,6 +73,7 @@
     .case {
       @include media("<=phone") {
         width: 100%;
+        margin-top: 7%;
       }
          
       position: relative;
@@ -108,8 +111,8 @@
         }
         span {
           margin-top: 70%;
-          font-size: 1.2rem;
-          color: rgb(197, 196, 196);
+          font-size: 1.3rem;
+          color: #b9901be0;
           font-weight: 600;
           @include media("<=desktop", ">tablet") {
             font-size: 1.0rem;
@@ -121,11 +124,11 @@
           }
         }
         h2 {
-          font-size: 0.9rem;
+          font-size: 1.0rem;
           line-height: 1.5rem;
           width: 100%;
           margin-top: 1px;
-          color: rgb(255, 255, 255);
+          color: rgba(255, 255, 255, 0.815);
           font-weight: 400;
           @include media("<=desktop", ">tablet") {
             font-size: 2rem;

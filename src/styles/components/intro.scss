@@ -1,0 +1,94 @@
+
+@font-face {
+  font-family: 'Raiderfont';
+  src: local('Raiderfont'), url("/fonts/Raiderfont.ttf") format('truetype');
+}
+
+
+* {
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.intro {
+  background-image: url("/assets/gold3.jpg");
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  top: 110%;
+  border-top: 80px solid black;
+  border-bottom: 90vh solid black
+}
+.introTitle{
+  background-color: #f4f3ed;
+  height: 40vh;
+  width: 30%;
+  margin-left: 50%;
+  margin-top: 7%;
+}
+
+.introContents h4{
+  font-size:20px;
+  color:white;
+  margin-left: 10%;
+}
+
+.introContents h2{
+  font-size:50px;
+  color:white;
+  margin-left: 10%;
+}
+
+.introContents{
+color:white;
+}
+
+.pro{
+  background-color: #f4f3ed;
+  width: 15%
+}
+
+.introTitle p{
+ 
+  margin-bottom: 0%;
+  text-align: center;
+  font-family: 'Arita-dotum-Medium';
+  font-size:17px;
+  color:#978e3f
+}
+
+.introTitle h1{
+
+  font-family: 'Arita-dotum-Medium';
+  text-align: center;
+  font-size:35px;
+  color:#000000
+}
+
+.introTitle h2{
+  margin-top: 1%;
+  font-family: serif;
+
+  text-align: center;
+  font-size: 2.4rem;
+  color: #b9901be0
+}
+
+.introTitle h3{
+
+  font-family: cursive;
+  text-align: center;
+  font-size:2.3rem;
+  color:#98904d
+}
+
+.introTitle h4{
+  margin-top: 2%;
+
+  font-family: 'Arita-dotum-Medium';
+  text-align: center;
+  font-size:1.0rem;
+  color:#98904d
+}

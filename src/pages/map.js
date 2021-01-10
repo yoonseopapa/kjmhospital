@@ -1,5 +1,5 @@
 import React from "react";
-import MapContainer from "../pages/mapContainer";
+import MapContainers from "../pages/mapContainer";
 
 
 const Map = () => {
@@ -46,7 +46,7 @@ const Map = () => {
           </h3>
         </div>
         <div className='mapKakao'>
-          <MapContainer/>
+          {/* <MapContainers/> */}
           </div>
       </div>
     </section>

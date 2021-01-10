@@ -8,6 +8,7 @@
 // @import "./components/navigation.scss";
 @import "./components/service.scss";
 @import "./components/warrap.scss";
+@import "./components/intro.scss";
 @import "./components/map.scss";
 @import "./components/footer.scss";
 @import "./components/aboutStory.scss";
@@ -35,7 +36,7 @@ html {
     @include media("<=phone") {
       width: 90%;
     }
-    height: calc(var(--vh, 1vh) * 65);
+    height: calc(var(--vh, 1vh) * 75);
     width: 78%;
   }
 

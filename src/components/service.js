@@ -109,7 +109,12 @@ const Service = () => {
           <br/>
         </p>
         </h2>
-        <p className="gs_reveal"> 피부과학으로 피부질환을 치료하는 전문성과 경험이 다릅니다.
+        <p className="gs_reveal"> 국립대학교병원의 피부과에서 지도전문의로서의 자격으로 
+        <br/>소아 피부질환부터 중증의 피부질환까지 다양하고 풍부한 
+        <br/>치료경험을 가지고 있습니다.
+        <br/> 
+        <br/>피부질환의 치료에서 미용시술, 의학적 피부관리, 
+        <br/>나아가 근본적인 피부의 개선을 위해 진료합니다. 
         <div className="scrolldownLeft">scroll down</div>
         </p>
         </div>
